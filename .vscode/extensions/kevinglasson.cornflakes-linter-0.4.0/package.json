@@ -1,0 +1,65 @@
+{
+	"name": "cornflakes-linter",
+	"displayName": "cornflakes-linter",
+	"description": "Wrapper for Python flake8 linter and associated plugins. It rectifies current issues with displaying ALL flake8 problems in the problems tab.",
+	"version": "0.4.0",
+	"publisher": "kevinglasson",
+	"icon": "images/cereals.png",
+	"categories": [
+		"Linters"
+	],
+	"keywords": [
+		"python",
+		"linter",
+		"flake8",
+		"lint",
+		"plugin"
+	],
+	"license": "SEE LICENSE IN LICENSE.txt",
+	"homepage": "https://github.com/kevinglasson/vscode-cornflakes-linter",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kevinglasson/vscode-cornflakes-linter.git"
+	},
+	"engines": {
+		"vscode": "^1.0.0"
+	},
+	"activationEvents": [
+		"onLanguage:python"
+	],
+	"main": "./out/src/extension",
+	"scripts": {
+		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"devDependencies": {
+		"typescript": "^1.8.10",
+		"vscode": "^0.11.12"
+	},
+	"contributes": {
+		"configuration": {
+			"properties": {
+				"cornflakes.linter.executablePath": {
+					"type": "string",
+					"default": "flake8",
+					"description": "Points to the flake8 exectuable."
+				},
+				"cornflakes.linter.run": {
+					"type": "string",
+					"enum": [
+						"onSave",
+						"off"
+					],
+					"default": "onSave",
+					"description": "Whether the linter is run on save, on type or disabled."
+				}
+			}
+		}
+	},
+	"__metadata": {
+		"id": "b520ea8d-9d11-4e49-bbb9-9ead45a72ba0",
+		"publisherId": "d2397ec6-7c52-49cb-a25c-5be5aad28d05",
+		"publisherDisplayName": "kevinglasson"
+	}
+}
