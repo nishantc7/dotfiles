@@ -1,1 +1,2 @@
-# dotfiles
+# Dotfiles
+### Dotfiles for Kubuntu
