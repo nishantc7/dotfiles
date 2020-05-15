@@ -1,2 +1,2 @@
 # Dotfiles
-### Dotfiles for Kubuntu
+### Dotfiles for Kubuntu's Konsole and Vscode
