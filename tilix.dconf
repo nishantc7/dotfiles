@@ -1,0 +1,19 @@
+[/]
+quake-specific-monitor=0
+theme-variant='dark'
+warn-vte-config-issue=false
+
+[profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
+background-color='#1E1E1E'
+badge-color-set=false
+bold-color-set=false
+cursor-colors-set=false
+cursor-shape='underline'
+default-size-columns=80
+font='Monospace 13'
+foreground-color='#5555FFFF5555'
+highlight-colors-set=false
+palette=['#1E1E1E', '#CF6A4C', '#8F9D6A', '#F9EE98', '#7587A6', '#9B859D', '#AFC4DB', '#A7A7A7', '#5F5A60', '#CF6A4C', '#8F9D6A', '#F9EE98', '#7587A6', '#9B859D', '#AFC4DB', '#FFFFFF']
+use-system-font=false
+use-theme-colors=false
+visible-name='Default'

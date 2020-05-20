@@ -1,0 +1,5 @@
+alias reloadshell="source ~/.zshrc"
+alias dstop='docker stop $(docker ps -a -q)'
+alias gst="git status"
+alias addcommit="git add -A && git commit -m"
+
